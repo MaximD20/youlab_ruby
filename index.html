@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Период</th>
+            <th>Горячая вода</th>
+            <th>Холодная вода</th>
+        </tr>
+        <tr>
+            <td>Май 2020</td>
+            <td>2.5</td>
+            <td>6.8</td>
+        </tr>
+        <tr>
+            <td>Июнь 2020</td>
+            <td>1.8</td>
+            <td>7.1</td>
+        </tr>
+        <tr>
+            <td>Июль 2020</td>
+            <td>1.9</td>
+            <td>7.3</td>
+        </tr>
+        <tr>
+            <td>Август 2020</td>
+            <td>2.0</td>
+            <td>8.1</td>
+        </tr>
+        <tr>
+            <td>Сентябрь 2020</td>
+            <td>2.3</td>
+            <td>6.9</td>
+        </tr>
+        <tr>
+            <td>Октябрь 2020</td>
+            <td>2.7</td>
+            <td>7.0</td>
+        </tr>
+    </table>
+    <h1>Внести показания</h1>
+    <div>
+        <form method="post">
+            <label>Период
+                <input type="month" name="month">
+            </label>
+            <br/>
+            <Label>
+                Холодная вода
+                <input type="range" name="hol" step="0.1" min="0.0" max="30.00" value="0" onchange="document.getElementById('valh').innerText = this.value;">
+                <span id="valh">0</span>
+            </Label>
+            <br/>
+            <Label>
+                Горячая вода
+                <input type="range" name="hol" step="0.1" min="0.00" max="10.00" value="0" onchange="document.getElementById('valg').innerText = this.value;">
+                <span id="valg">0</span>
+            </Label>
+            <br/>
+            <input type="submit" id="input-submit">
+            <input type="reset" id="input-reset">
+        </form>
+    </div>
+</body>
+</html>

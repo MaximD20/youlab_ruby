@@ -1,0 +1,37 @@
+table
+{
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th,td
+{
+    width: 150px;
+    border: 1px solid black;
+    text-align: center;
+}
+#input-reset
+{
+    border-radius: 15px;
+    background-color: brown;
+    border: none;
+    width:100px;
+    height: 25px;
+    color:white;
+}
+#input-submit
+{
+    border-radius: 15px;
+    background-color:royalblue;
+    border: none;
+    width:100px;
+    height: 25px;
+    color:white;
+}
+label
+{
+}
+input
+{
+    margin: 30px;
+}
